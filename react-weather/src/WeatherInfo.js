@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import "./Weather.css"
 
 export default function WeatherInfo(props) {
   return (
@@ -16,9 +17,9 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-6">
-          Humidity: {Math.round(props.data.humidity)}%
+          Humidity: <strong>{Math.round(props.data.humidity)}</strong>%
         </div>
-        <div className="col-6">Wind: {Math.round(props.data.wind)} km/h</div>
+        <div className="col-6">Wind: <strong>{Math.round(props.data.wind)}</strong> km/h</div>
       </div>
     </div>
   );
